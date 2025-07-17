@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexDrop - A custom dropdown menu</title>
+    <link rel="stylesheet" href="flexdrop.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🍔 FlexDrop Demo</h1>
+            <p>Custom dropdown component with checkboxes</p>
+        </header>
+        
+        <main class="main-content">
+            <div class="demo-section">
+                <h2>Build Your Perfect Burger</h2>
+                <p class="description">Select your favorite ingredients to customize your burger experience.</p>
+                
+                <div class="dropdown-container">
+                    <label class="dropdown-label">Choose Ingredients:</label>
+                    <div class="flex-dropdown">
+                        <ul class="flex-dropdown-select" name="ingredients" id="ingredients">
+                            <li class="flex-dropdown-option premier">-- Pick your ingredients --</li>
+                        </ul>
+                        <ul class="flex-dropdown-options" name="ingredients" id="ingredients">
+                            <li class="flex-dropdown-option" value="beef">
+                                <input class="flex-dropdown-checkbox" type="checkbox" name="beef" id="beef" value="beef">
+                                <span class="option-text">🥩 Beef</span>
+                            </li>
+                            <li class="flex-dropdown-option" value="chicken">
+                                <input class="flex-dropdown-checkbox" type="checkbox" name="chicken" id="chicken" value="chicken">
+                                <span class="option-text">🍗 Chicken</span>
+                            </li>
+                            <li class="flex-dropdown-option" value="cheese">
+                                <input class="flex-dropdown-checkbox" type="checkbox" name="cheese" id="cheese" value="cheese">
+                                <span class="option-text">🧀 Cheese</span>
+                            </li>
+                            <li class="flex-dropdown-option" value="lettuce">
+                                <input class="flex-dropdown-checkbox" type="checkbox" name="lettuce" id="lettuce" value="lettuce">
+                                <span class="option-text">🥬 Lettuce</span>
+                            </li>
+                            <li class="flex-dropdown-option" value="onion">
+                                <input class="flex-dropdown-checkbox" type="checkbox" name="onion" id="onion" value="onion">
+                                <span class="option-text">🧅 Onion</span>
+                            </li>
+                            <li class="flex-dropdown-option" value="tomato">
+                                <input class="flex-dropdown-checkbox" type="checkbox" name="tomato" id="tomato" value="tomato">
+                                <span class="option-text">🍅 Tomato</span>
+                            </li>
+                            <li class="flex-dropdown-option" value="pickle">
+                                <input class="flex-dropdown-checkbox" type="checkbox" name="pickle" id="pickle" value="pickle">
+                                <span class="option-text">🥒 Pickle</span>
+                            </li>
+                            <li class="flex-dropdown-option" value="mushroom">
+                                <input class="flex-dropdown-checkbox" type="checkbox" name="mushroom" id="mushroom" value="mushroom">
+                                <span class="option-text">🍄 Mushroom</span>
+                            </li>
+                            <li class="flex-dropdown-option" value="jalapeno">
+                                <input class="flex-dropdown-checkbox" type="checkbox" name="jalapeno" id="jalapeno" value="jalapeno">
+                                <span class="option-text">🌶️ Jalapeno</span>
+                            </li>
+                            <li class="flex-dropdown-option" value="sauce">
+                                <input class="flex-dropdown-checkbox" type="checkbox" name="sauce" id="sauce" value="sauce">
+                                <span class="option-text">🥫 Sauce</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="info-section">
+                    <h3>Features</h3>
+                    <ul class="features-list">
+                        <li>✅ Custom checkbox dropdown</li>
+                        <li>✅ Multiple selection support</li>
+                        <li>✅ Responsive design</li>
+                        <li>✅ Smooth animations</li>
+                        <li>✅ Click outside to close</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="footer">
+            <p>Built with ❤️ using FlexDrop</p>
+        </footer>
+    </div>
+</body>
+
+<script src="dropdown.js"></script>
+<script>
+  document.querySelectorAll('.flex-dropdown').forEach(el => new FlexDropdown(el));
+</script>
+
+</html>

@@ -1,0 +1,107 @@
+/* Demo Styles - Simple, clean layout */
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: white;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Main Content */
+.main-content {
+    margin-bottom: 2rem;
+}
+
+.demo-section {
+    background: white;
+    padding: 2rem;
+}
+
+.demo-section h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.description {
+    color: #333;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+/* Dropdown Container */
+.dropdown-container {
+    margin-bottom: 2rem;
+}
+
+.dropdown-label {
+    display: block;
+    font-weight: normal;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Info Section */
+.info-section {
+    background: #f5f5f5;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+.info-section h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.features-list {
+    list-style: none;
+}
+
+.features-list li {
+    padding: 0.25rem 0;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 2rem;
+    color: #666;
+    font-size: 0.9rem;
+}

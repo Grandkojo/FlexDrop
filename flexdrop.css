@@ -1,0 +1,144 @@
+/* FlexDrop Component Styles - Independent Dropdown Component */
+
+.flex-dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1000;
+    width: fit-content;
+    isolation: isolate;
+}
+
+.flex-dropdown-select {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    border-radius: 8px;
+    border: 2px solid #e2e8f0;
+    height: 1.7rem;
+    margin: 0;
+    background-color: #ffffff;
+    user-select: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    width: max-content;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.flex-dropdown-select:hover {
+    border-color: #667eea;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+}
+
+.flex-dropdown-select::after {
+    content: "▾";
+    display: inline-block;
+    transition: transform 0.3s;
+    margin-left: 12px;
+    margin-right: 4px;
+    font-size: 20px;
+    line-height: 1;
+    color: #667eea;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.flex-dropdown-options {
+    padding: 8px;
+    border-radius: 8px;
+    margin: 0;
+    background-color: #ffffff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e2e8f0;
+    user-select: none;
+    display: none;
+    width: max-content;
+    max-height: 300px;
+    overflow-y: auto;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1001;
+    margin-top: 2px;
+    pointer-events: auto;
+}
+
+.flex-dropdown-option {
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    cursor: pointer;
+    height: min-content;
+    transition: all 0.2s ease;
+    border-radius: 6px;
+    margin: 2px 0;
+}
+
+.flex-dropdown-option:hover {
+    background-color: #99c9e9;
+    border-radius: 6px;
+}
+
+.option-text {
+    margin-left: 8px;
+    font-size: 0.95rem;
+    color: #4a5568;
+}
+
+/* Only style the premier option specially when in the select (not in the dropdown list) */
+.flex-dropdown-select .flex-dropdown-option.premier {
+  background-color: transparent;
+  font-weight: 500;
+  cursor: default;
+  pointer-events: none;
+  color: #000000;
+  font-size: 1.1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* In the dropdown list, premier should look like other options */
+.flex-dropdown-options .flex-dropdown-option.premier {
+  background: inherit;
+  color: inherit;
+  font-weight: normal;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.flex-dropdown-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #cbd5e0;
+    border-radius: 4px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.flex-dropdown-checkbox:checked {
+    background: #667eea;
+    border-color: #667eea;
+}
+
+.flex-dropdown-checkbox:checked::after {
+    content: "✓";
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+} 
