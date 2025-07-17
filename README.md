@@ -44,10 +44,10 @@ In development - A lightweight, customizable dropdown component with checkbox se
 </div>
 ```
 
-###3lize the Component
+###3. Initialize the Component
 
 ```javascript
-document.querySelectorAll(.flex-dropdown').forEach(el => new FlexDropdown(el));
+document.querySelectorAll('.flex-dropdown').forEach(el => new FlexDropdown(el));
 ```
 
 ## 🎨 Customization
@@ -58,7 +58,7 @@ The component comes with a clean, modern design that you can easily customize:
 
 ```css
 /* Customize the select area */
-.flex-dropdown-select [object Object]
+.flex-dropdown-select {
     border-color: #your-color;
     background-color: #your-bg-color;
 }
@@ -155,15 +155,23 @@ flexdrop/
 
 ## 📄 License
 
-MIT License - feel free to use in your projects!
+MIT License - feel free to use in your projects! [LICENSE](./LICENSE)
 
 ## 🤝 Support
-**You can star this project if you like it :).**
+
 - If you have questions or need help:
 1. Check the demo page for examples
 2. the code comments
 3. Open an issue on GitHub
 
 ---
+
+## Attribution
+
+If you use **FlexDrop** in your project, kindly give credit by mentioning:
+
+ Built with [FlexDrop](https://github.com/Grandkojo/FlexDrop) by Ernest Essien.
+
+A star ⭐ on the repo is always appreciated!
 
 **Built with ❤️ for better user experiences**
